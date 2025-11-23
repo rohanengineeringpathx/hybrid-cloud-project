@@ -1,0 +1,28 @@
+services:
+  products-service:
+    image: node:16-alpine
+    working_dir: /app
+    volumes:
+      - ./backend/products-service:/app
+    ports:
+      - "3001:3001"
+    command: sh -c "npm install && node index.js"
+
+  users-service:
+    image: node:16-alpine
+    working_dir: /app
+    volumes:
+      - ./backend/users-service:/app
+    ports:
+      - "3002:3002"
+    command: sh -c "npm install && node index.js"
+
+  frontend:
+    image: nginx:alpine
+    volumes:
+      - ./frontend/build:/usr/share/nginx/html
+    ports:
+      - "3000:80"
+    depends_on:
+      - products-service
+      - users-service

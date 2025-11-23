@@ -1,0 +1,274 @@
+.footer {
+  background: var(--primary-color);
+  color: white;
+  margin-top: auto;
+}
+
+.footer-top {
+  background: var(--secondary-color);
+  padding: 30px 0;
+}
+
+.footer-sections {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 25px;
+}
+
+.footer-section h4 {
+  color: #ffffff;
+  margin-bottom: 12px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 8px;
+  color: #dddddd;
+  font-size: 12px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.footer-section ul li:hover {
+  color: var(--accent-color);
+  text-decoration: underline;
+}
+
+.footer-middle {
+  background: var(--primary-color);
+  padding: 25px 0;
+  border-top: 1px solid #3a4553;
+}
+
+.footer-middle .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.footer-logo .logo-icon {
+  font-size: 22px;
+}
+
+.footer-logo .logo-text {
+  color: var(--accent-color);
+}
+
+.footer-tech {
+  text-align: right;
+}
+
+.footer-tech strong {
+  color: var(--accent-color);
+  display: block;
+  margin-bottom: 4px;
+  font-size: 13px;
+}
+
+.footer-tech p {
+  color: #dddddd;
+  font-size: 11px;
+  margin: 0;
+}
+
+.footer-bottom {
+  background: var(--primary-color);
+  padding: 15px 0;
+  border-top: 1px solid #3a4553;
+}
+
+.footer-bottom .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.footer-links {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.footer-links span {
+  color: #dddddd;
+  font-size: 11px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.footer-links span:hover {
+  color: var(--accent-color);
+  text-decoration: underline;
+}
+
+.footer-copyright {
+  color: #dddddd;
+  font-size: 11px;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .footer-top {
+    padding: 25px 0;
+  }
+  
+  .footer-sections {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  
+  .footer-section h4 {
+    font-size: 13px;
+    margin-bottom: 10px;
+  }
+  
+  .footer-section ul li {
+    font-size: 11px;
+    margin-bottom: 6px;
+  }
+  
+  .footer-middle {
+    padding: 20px 0;
+  }
+  
+  .footer-middle .container {
+    flex-direction: column;
+    text-align: center;
+    gap: 12px;
+  }
+  
+  .footer-tech {
+    text-align: center;
+  }
+  
+  .footer-logo {
+    font-size: 18px;
+  }
+  
+  .footer-logo .logo-icon {
+    font-size: 20px;
+  }
+  
+  .footer-tech strong {
+    font-size: 12px;
+  }
+  
+  .footer-tech p {
+    font-size: 10px;
+  }
+  
+  .footer-bottom {
+    padding: 12px 0;
+  }
+  
+  .footer-bottom .container {
+    flex-direction: column;
+    text-align: center;
+    gap: 8px;
+  }
+  
+  .footer-links {
+    justify-content: center;
+    gap: 12px;
+  }
+  
+  .footer-links span {
+    font-size: 10px;
+  }
+  
+  .footer-copyright {
+    font-size: 10px;
+  }
+}
+
+/* Small Mobile Devices */
+@media (max-width: 480px) {
+  .footer-sections {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    text-align: center;
+  }
+  
+  .footer-top {
+    padding: 20px 0;
+  }
+  
+  .footer-middle {
+    padding: 15px 0;
+  }
+  
+  .footer-logo {
+    font-size: 16px;
+  }
+  
+  .footer-tech strong {
+    font-size: 11px;
+  }
+  
+  .footer-tech p {
+    font-size: 9px;
+  }
+  
+  .footer-links {
+    gap: 8px;
+  }
+  
+  .footer-links span {
+    font-size: 9px;
+  }
+  
+  .footer-copyright {
+    font-size: 9px;
+  }
+}
+
+/* Large Desktop */
+@media (min-width: 1200px) {
+  .footer-sections {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+  }
+  
+  .footer-section h4 {
+    font-size: 15px;
+  }
+  
+  .footer-section ul li {
+    font-size: 13px;
+  }
+  
+  .footer-tech strong {
+    font-size: 14px;
+  }
+  
+  .footer-tech p {
+    font-size: 12px;
+  }
+  
+  .footer-links span {
+    font-size: 12px;
+  }
+  
+  .footer-copyright {
+    font-size: 12px;
+  }
+}
